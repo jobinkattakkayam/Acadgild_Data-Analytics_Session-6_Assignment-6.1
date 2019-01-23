@@ -34,6 +34,7 @@ Title <- barplot(table(TitanicData$Title),
 text(Title, 0,table(TitanicData$Title), pos = 3, srt = 90)
 
 
+
 #-----------------------------------------------------------------------------------------------------------------
 # b. Represent the proportion of people survived from the family size using a graph
 
@@ -70,6 +71,8 @@ legend("right", names(p), cex= 0.5, fill = rainbow(length(p)))
 pie(prop, labels = prop, main = " Proportion of Survival by Family",
     col = rainbow(length(prop)), cex = 1)
 legend("right", names(prop), cex= 0.5, fill = rainbow(length(prop)))
+
+
 
 #---------------------------------------------------------------------------------------------------------------
 # c. Impute the missing values in Age variable using Mice Library, create two different 
